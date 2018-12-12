@@ -1,0 +1,2 @@
+<view>{{result}}</view>
+<view bindtap='go'>到首页</view>

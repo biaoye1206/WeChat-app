@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<!-- <view class='head'>
+  <view class='head-left'>
+      <text selectable="false" space='true'>广州市</text>
+      <image style="width: 12px; margin-left: 3px" 
+        mode="widthFix" src="/image/down.png"/>
+  </view>  
+</view> -->
+<view class='body'>
+   <!-- 地图模块 --> 
+    <map style='width:100%;height:100%' 
+      id="mapCase" 
+      scale="{{scale}}"
+      latitude="{{latitude}}" 
+      longitude="{{longitude}}" 
+      markers="{{markers}}" 
+      covers="{{covers}}" 
+      show-location>
+      <cover-view class='toolsBox'>
+        <cover-image class="locate" src="/image/locate.png" bindtap='tolocation'/>
+      </cover-view>  
+    </map>
+</view>  

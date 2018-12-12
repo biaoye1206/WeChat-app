@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/scan/scan",
+    "pages/vip/vip",
+    "pages/pay/pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "天娇智能洗车",
+    "navigationBarTextStyle": "black"
+
+  },
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "地图",
+        "iconPath": "/image/map_normal.png",
+        "selectedIconPath": "/image/map_select.png"
+      },
+      {
+        "pagePath": "pages/scan/scan",
+        "text": "扫码/支付",
+        "iconPath": "/image/code_normal.png",
+        "selectedIconPath": "/image/code_select.png"
+      },
+      {
+        "pagePath": "pages/vip/vip",
+        "text": "我的",
+        "iconPath": "/image/user_normal.png",
+        "selectedIconPath": "/image/user_select.png"
+      }
+    ]
+  }
+}
