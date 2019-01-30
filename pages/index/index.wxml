@@ -1,23 +1,47 @@
-<!--index.wxml-->
-<!-- <view class='head'>
-  <view class='head-left'>
-      <text selectable="false" space='true'>广州市</text>
-      <image style="width: 12px; margin-left: 3px" 
-        mode="widthFix" src="/image/down.png"/>
-  </view>  
-</view> -->
-<view class='body'>
-   <!-- 地图模块 --> 
-    <map style='width:100%;height:100%' 
-      id="mapCase" 
+  <!-- <view class='search-group'>
+      <input class='search' placeholder='请输入服务站名称'/> -->
+      <!-- <image class="" src='/image/search.png' bindtap='query'></image> -->
+  <!-- </view> -->
+  <!-- 地图模块 -->
+  <map id="mapCase" 
       scale="{{scale}}"
       latitude="{{latitude}}" 
       longitude="{{longitude}}" 
       markers="{{markers}}" 
-      covers="{{covers}}" 
-      show-location>
-      <cover-view class='toolsBox'>
-        <cover-image class="locate" src="/image/locate.png" bindtap='tolocation'/>
-      </cover-view>  
-    </map>
-</view>  
+      bindmarkertap="clickMarker"
+      bindregionchange="regionChange"
+      bindtap="closeInfo"
+      polyline="{{polyline}}"
+  show-location>
+    <cover-view class='tooles'>
+      <cover-view class='tool'>
+        <cover-image class="tooles-image" src="/image/locate.png" bindtap='moveToLocation' />
+      </cover-view>
+      <cover-view style='background-color:#efefef;height:3px;width:100%'>-</cover-view>
+      <cover-view class='tool'>
+        <cover-image class="tooles-image" src="/image/feedback.png" bindtap='' />
+      </cover-view>
+    </cover-view>
+  </map>
+  <cover-view class='server-info width-ninety' hidden='{{hiddenInfo}}'>
+    <cover-view class='flex-row' style='width: 92%;margin: 15px auto;'>
+      <cover-view>
+        <cover-view class='flex-row' >
+          <cover-image src='/image/info_img.png' class='info_img' style='margin-right:5px'/>
+          <cover-view class='title-style'>{{info.name}}</cover-view>
+        </cover-view>
+
+        <cover-view class='content-style' style="margin-top:8px;">{{info.address}} | {{info.distance}}</cover-view>
+      </cover-view>
+      <cover-view class='navigate_image'>
+        <cover-image  src='/image/navigate.png' bindtap='toNavigate'></cover-image>
+      </cover-view>
+    </cover-view>
+
+    <cover-view class='width-hundred' style='height:1.2px;background-color:#eee'></cover-view>
+    <cover-view class='content-style width-eighty flex-row' style='margin: 10px auto;width:265px;'>
+      <cover-view >设备状态：</cover-view>
+      <cover-view style='color:#02F500'>正常</cover-view>
+      <cover-view style='margin-left:40px'>服务时间：8:00-22:00</cover-view>
+    </cover-view>
+  </cover-view>

@@ -1,23 +1,29 @@
-//app.js
+const common = require("./lib/common.js")
+
 App({
-  onLaunch: function () {
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-    // 获取授权
-    wx.getSetting({
-      success(res) {
-        if (!res.authSetting["scope.userLocation"]){
-          wx.authorize({
-            scope: 'scope.userLocation',
-          })
-        }
-      }
-    })
+  // hostUrl: 'https://localhost/autowash',
+  hostUrl: 'https://www.cntjzz.com/autowash',
+  user: {
+    isLogin: false,
+    session: ''
   },
-  globalData: {
-    userInfo: null
+  onLaunch: function() { 
+    this.init();
+    common.checkUpdate();
+  },
+  init: function() {
+    const _this = this;
+    wx.checkSession({
+      success() {
+        _this.user.isLogin = true;
+      }
+    });
   }
-  
 })
+
+
+// color0: #9DD3FA__RGB(157,211,250)
+// color1: #1F6FB5__RGB(31,111,181)
+// color2: #FCD692__RGB(252,214,146)
+// color3: #FAFFEB__RGB(250,255,235)
+// color4: #FFFFFF__RGB(255,255,255)

@@ -2,15 +2,17 @@
   "pages": [
     "pages/index/index",
     "pages/scan/scan",
-    "pages/vip/vip",
-    "pages/pay/pay"
+    "pages/my/my",
+    "pages/order/order",
+    "pages/phone/phone",
+    "pages/user/user"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#FFF",
-    "navigationBarTitleText": "天娇智能洗车",
-    "navigationBarTextStyle": "black"
-
+    "navigationBarBackgroundColor": "#1F6FB5",
+    "navigationBarTitleText": "骄子智能洗车",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default"
   },
   "tabBar": {
     "color": "#696969",
@@ -19,7 +21,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "地图",
+        "text": "首页",
         "iconPath": "/image/map_normal.png",
         "selectedIconPath": "/image/map_select.png"
       },
@@ -30,11 +32,16 @@
         "selectedIconPath": "/image/code_select.png"
       },
       {
-        "pagePath": "pages/vip/vip",
+        "pagePath": "pages/my/my",
         "text": "我的",
         "iconPath": "/image/user_normal.png",
         "selectedIconPath": "/image/user_select.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序对您附近服务站获取"
+    }
   }
 }

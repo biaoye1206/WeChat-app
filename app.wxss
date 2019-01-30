@@ -1,4 +1,6 @@
-/**app.wxss**/
+/* 页面全局 */
+@import "/lib/weui.wxss";
+
 page {
   display: flex;
   align-items: center;
@@ -8,4 +10,81 @@ page {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+}
+
+/* page 左右边距5% */
+
+.body-left {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* 内容字体大小 */
+
+.content-style {
+  font-size: 13px;
+  color: #789;
+}
+
+.content-medium-style {
+  font-size: 15px;
+  color: #789;
+}
+
+/* 标题字体大小 */
+
+.title-style {
+  font-size: 18px;
+  color: #304050;
+}
+
+/* 颜色:灰 */
+
+.color-content {
+  color: #789;
+}
+
+.color-title {
+  color: #304050;
+}
+
+.color-blue {
+  background-color: #1f6fb5;
+}
+
+/* 左右排列 */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 上下排列 */
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 100%宽度 */
+
+.width-hundred {
+  width: 100%;
+}
+
+/* 90%宽度 */
+
+.width-ninety {
+  width: 90%;
+}
+
+/* 80%宽度 */
+
+.width-eighty {
+  width: 80%;
+}
+.pay-type{
+  text-align:center;
+  border:1px solid #789;
+  border-radius: 5px;
 }

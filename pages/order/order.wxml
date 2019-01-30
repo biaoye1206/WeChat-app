@@ -1,0 +1,37 @@
+<view class='quter_frame flex-row'>
+  <view class='left_frame'>
+    <image src='../../image/wash.png' style='width:35px;height:31px'></image>
+  </view>
+  <view class='right_frame'>
+    <text class='title-style' style='color:#1F6FB5;font-size:22px'>{{orderDetil.serviceStationName}}</text>
+    <text class='content-style text-content'>{{orderDetil.serviceStationAddr}}</text>
+    <view class='line line-height' />
+    <view class='flex-row content-align'>
+      <view style='width:22px;height:22px'>
+        <image src='../../image/time.png' style='width:100%;height:100%'></image>
+      </view>
+      <text class='content-title' style='margin-left:5px;'>洗车时间5分钟</text>
+    </view>
+    <view class="title-style line-height flex-row">
+      <view style='width:50%;'>支付金额</view>
+      <view style='width:5%' />
+      <view style='width:45%;'>￥{{orderDetil.amount}}元</view>
+    </view>
+    <picker id='pay' value="{{pay.payType}}" range="{{orderDetil.payTypes}}" bindchange='pickerChange'>
+      <view class="title-style line-height flex-row">
+        <view style='width:50%;'>支付方式</view>
+        <view style='width:5%' />
+        <view class='pay-type' style='width:45%;'>
+          <text>{{orderDetil.payTypes[pay.payType]}}</text>
+          <text style='position:relative;right:-5px;'>▼</text>
+        </view>
+      </view>
+    </picker>
+    <view class='submit-model'>
+    <view hidden='true'>{{pay.amount}}</view>
+      <view class='submit'>
+        <button type='primary' bindtap='orderPost'>确认支付</button>
+      </view>
+    </view>
+  </view>
+</view>

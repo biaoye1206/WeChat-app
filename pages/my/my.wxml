@@ -1,0 +1,43 @@
+<!--pages/vip/vip.wxml-->
+
+<view class='head width-hundred color-blue flex-row'>
+  <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+  <view class='user-set'>
+    <text class='font-bolder'>{{userInfo.nickName}}</text>
+    <navigator class='login-setting' url="/pages/phone/phone">
+      <label>帐号管理
+        <text style='margin-left:5px'>></text>
+      </label>
+    </navigator>
+  </view>
+</view>
+<view class='weui-cells'>
+  <navigator class="weui-cell weui-cell_access" url="pages/icon/icon">
+    <view class="weui-cell__bd">全部订单</view>
+    <view class="weui-cell__ft"></view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access" url="pages/icon/icon">
+    <view class="weui-cell__bd">积分明细</view>
+    <view class="weui-cell__ft"></view>
+  </navigator>
+</view>
+<view class='weui-cells'>
+  <navigator class="weui-cell weui-cell_access" url="pages/icon/icon">
+    <view class="weui-cell__bd">会员认证</view>
+    <view class="weui-cell__ft"></view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access" url="pages/icon/icon">
+    <view class="weui-cell__bd">充值记录</view>
+    <view class="weui-cell__ft"></view>
+  </navigator>
+</view>
+<view class='weui-cells'>
+  <navigator class="weui-cell weui-cell_access" url="pages/icon/icon">
+    <view class="weui-cell__bd">意见反馈</view>
+    <view class="weui-cell__ft"></view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access" url="pages/icon/icon">
+    <view class="weui-cell__bd">关于我们</view>
+    <view class="weui-cell__ft"></view>
+  </navigator>
+</view>

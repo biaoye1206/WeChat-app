@@ -1,2 +1,4 @@
-<view>
+<view class='content'>
+  <image src='/image/background.png'></image>
+  <button class='scan-btn' type='primary' bindtap='codeScan'>开始扫码</button>
 </view>
