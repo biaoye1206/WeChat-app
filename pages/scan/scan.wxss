@@ -1,9 +1,52 @@
-.content{
-  margin-top: 120px;
+/* .swiper{
+	width: 360px;
+	height: 200px;
 }
 .content .scan-btn{
-  margin-top: 30px;
+  margin-top: 80px;
   width: 200px;
   box-shadow: 2px 2px 2px #888888;
   font-family: jzzt;
+}
+.center{
+  margin-top: 22px;
+}
+.remark{
+	width: 100%;
+	border-top: #C8C8CD solid 0.0625rem;
+	margin-top: 42px;
+	font-size: 12px;
+	color: #D7D6DC;
+} */
+.body-left{
+	margin-top: 5%;
+}
+.model-item{
+	width: 100%;
+	margin-bottom: 40rpx;
+}
+.remark{
+	border-top: #C7C7C7 solid  2rpx;
+	font-size: 22rpx;
+	color: #000000;
+	line-height: 2;
+	font-family: "宋体";
+}
+.frame{
+	height: 100%;
+}
+.remark-text {
+	padding-left: 44rpx;
+	line-height: 1.8;
+}
+
+.scan-btn{
+  font-family: jzzt;
+}
+.head{
+	width: 100%;
+	height: 60%;
+}
+.body-left{
+	height: 40%;
 }

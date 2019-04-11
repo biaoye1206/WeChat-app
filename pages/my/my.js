@@ -1,10 +1,14 @@
-var app = getApp();
+/**
+ * 引入模块
+ */
+const common = require("../../lib/common.js")
 
 Page({
   /**
    * 页面的初始数据
    */
   data: {
+    show: false,
     userInfo: {
       avatarUrl: '',
       nickName: '请点击登陆'
@@ -25,35 +29,21 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    var token = wx.getStorageSync("token");  
-    if (app.user.isLogin && token != undefined && token != '') {
-      this.showUserInfo();
-    }else{
-      this.setData({
-        userInfo: {
-          avatarUrl: '',
-          nickName: '请点击登陆'
-        }
-      })
-    }
+   this.initShow();
   },
-
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
-  },
+  onHide: function() {},
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
-  },
+  onUnload: function() {},
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
-  },
+  onPullDownRefresh: function() {},
   /**
    * 页面上拉触底事件的处理函数
    */
@@ -68,18 +58,38 @@ Page({
    */
   showUserInfo: function() {
     const _this = this;
-    wx.getStorage({
-      key: 'user',
-      success: function(res) {
-        _this.setData({
-          userInfo: res.data
-        })
-      },
-      fail(){
-        wx.navigateTo({
-          url: '/pages/user/user?flag=true'
-        })
-      }
-    })
-  }
+    var user = common.getLocationStorag('userInfo')
+    if (user != null) {
+      _this.setData({
+        userInfo: user
+      })
+    }
+  },
+	/**
+	 * 退出登陆
+	 */
+	logOut: function() {
+	  common.logOut();
+		this.initShow();
+	},
+	initShow:function(){
+		 if (common.isLogin()) {
+		  // 未显示个人信息
+		  if (!this.show) {
+		    // 显示用户信息
+		    this.showUserInfo();
+		    this.setData({
+		      show: true
+		    })
+		  }
+		} else {
+		  this.setData({
+		    userInfo: {
+		      avatarUrl: '',
+		      nickName: '请点击登陆'
+		    },
+		     show: false
+		  })
+		}
+	}
 })

@@ -3,13 +3,15 @@
     "pages/index/index",
     "pages/scan/scan",
     "pages/my/my",
-    "pages/order/order",
-    "pages/phone/phone",
-    "pages/user/user"
+    "pages/pay/pay",
+    "pages/my/phone/phone",
+    "pages/my/user/user",
+    "pages/my/order/order",
+		"pages/my/recharge/recharge"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#1F6FB5",
+    "navigationBarBackgroundColor": "#1296db",
     "navigationBarTitleText": "骄子智能洗车",
     "navigationBarTextStyle": "white",
     "navigationStyle": "default"

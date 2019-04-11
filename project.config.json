@@ -14,7 +14,7 @@
 		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.5.1",
+	"libVersion": "2.4.3",
 	"appid": "wx67dd7d5e5c68f8ae",
 	"projectname": "weixin",
 	"debugOptions": {
@@ -45,7 +45,8 @@
 					"id": 0,
 					"name": "update",
 					"pathName": "pages/index/index",
-					"query": ""
+					"query": "",
+					"scene": null
 				}
 			]
 		}

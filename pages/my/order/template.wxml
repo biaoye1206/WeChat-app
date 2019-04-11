@@ -1,0 +1,24 @@
+<template name='orderList'>
+  <navigator class="weui-cell weui-cell_access" data-id='{{id}}'>
+    <!-- 图片 -->
+    <view class="weui-cell__hd_in" wx:if="{{tradeType==0}}">
+      <image id="image" src='/image/pay.png' lazy-load="true" model="widthFix"/>
+    </view>
+    <view class="weui-cell__hd_in" wx:if="{{tradeType==1}}">
+      <image id="image" src='/image/top_up.png' lazy-load="true" model="widthFix"/>
+    </view>
+    
+    <!-- 服务类别 -->
+    <view class="column column_broad weui-cell__hd_in" wx:if="{{tradeType==0}}">洗车支付</view>
+    <view class="column column_broad weui-cell__hd_in" wx:if="{{tradeType==1}}">余额充值</view>
+
+    <view class="column weui-cell__hd_in weui-cell__hd_in-select-after">￥{{orderAmount}}</view>
+    <view class="column column_broad weui-cell__hd_in weui-cell__hd_in-select-after">{{createDate}}</view>
+    <!-- 交易情况 -->
+
+    <view class="column weui-cell__hd_in weui-cell__hd_in-select-after" wx:if="{{orderResult==0}}">未支付</view>
+    <view class="column weui-cell__hd_in weui-cell__hd_in-select-after" wx:if="{{orderResult==1}}">已取消</view>
+    <view class="column weui-cell__hd_in weui-cell__hd_in-select-after" wx:if="{{orderResult==2}}">已完成</view>
+    <view class="column weui-cell__hd_in weui-cell__hd_in-select-after" wx:if="{{orderResult==3}}">已退款</view>
+  </navigator>
+</template>

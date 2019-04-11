@@ -1,30 +1,35 @@
-var app = getApp();
+/**
+ * 引入模块
+ */
+const common = require("../../lib/common.js")
 Page({
   /**
    * 页面的初始数据
    */
-  data: {},
+  data: {
+		background: ['https://www.cntjzz.com:8008/autowash/img/imageab.jpg', 'https://www.cntjzz.com:8008/autowash/img/imageab.jpg', 'https://www.cntjzz.com:8008/autowash/img/imageab.jpg']
+	},
+  
   /**
    * 识别二维码
    */
   codeScan() {
+    if (!common.isLogin()) {
+      wx.showToast({
+        title: '请先登陆',
+        icon: 'info',
+        duration: 1500,
+        mask: true
+      })
+      return;
+    }
     var scan = this
     wx.scanCode({
       onlyFromCamera: true,
       scanType: ['qrCode'],
       success: function(res) {
-        var token = wx.getStorageSync("token");
-        if (!app.user.isLogin || token == undefined || token == '') {
-          wx.showToast({
-            title: '请先登陆',
-            icon: 'info',
-            duration: 1500,
-            mask: true
-          })
-          return;
-        }
         wx.navigateTo({
-          url: '/pages/order/order?result=' + res.result
+          url: '/pages/pay/pay?result=' + res.result
         })
       }
     })
@@ -33,7 +38,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    //this.codeScan()
   },
 
   /**
@@ -44,7 +48,8 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {},
+  onShow: function() {
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

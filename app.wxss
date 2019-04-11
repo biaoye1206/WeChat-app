@@ -22,19 +22,19 @@ page {
 /* 内容字体大小 */
 
 .content-style {
-  font-size: 13px;
+  font-size: 28rpx;
   color: #789;
 }
 
 .content-medium-style {
-  font-size: 15px;
+  font-size: 30rpx;
   color: #789;
 }
 
 /* 标题字体大小 */
 
 .title-style {
-  font-size: 18px;
+  font-size: 36rpx;
   color: #304050;
 }
 
@@ -85,6 +85,19 @@ page {
 }
 .pay-type{
   text-align:center;
-  border:1px solid #789;
+  border:2rpx solid #789;
   border-radius: 5px;
+}
+/*左右居中*/
+.element-center{
+  margin: auto;
+}
+.weui-cell image{
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 20rpx;
+  margin-top: 8rpx;
+}
+.text-center{
+	text-align: center;
 }

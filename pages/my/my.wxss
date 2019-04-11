@@ -1,23 +1,23 @@
 page {
-  background-color: #efefef;
+  background-color: #fafafa;
   display: block;
 }
 
 .head {
-  height: 130px;
-  color: #9dd3fa;
+  height: 260rpx;
+  color: #1D8EC5;
 }
 
 .avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
   background-color: #fff;
-  margin: 10px 0px 0px 25px;
+  margin: 20rpx 0rpx 0rpx 50rpx;
 }
 .user-set {
-  margin-left: 12px;
-  margin-top: 25px;
+  margin-left: 24rpx;
+  margin-top: 50rpx;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -25,16 +25,19 @@ page {
 
 .font-bolder {
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 40rpx;
 }
 
 .login-setting {
-  margin-top: 3px;
-  width: 80px;
-  font-size: 12px;
-  border: 1px solid #9dd3fa;
+  margin-top: 6rpx;
+  width: 160rpx;
+  font-size: 24rpx;
+  border: 2rpx solid #9dd3fa;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20rpx;
   background-color: #1e6eb2;
   color: #9dd3fa;
+}
+.text-center:active{
+	background-color: #E08031;
 }

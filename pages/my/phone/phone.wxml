@@ -1,0 +1,6 @@
+<block wx:if='{{!isLogin}}'>
+  <button class='weui-btn' type='primary' open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber" style='margin: auto;'>微信用户一键登录</button>
+</block>
+<block wx:else>
+  <text>你已登陆</text>
+</block>
