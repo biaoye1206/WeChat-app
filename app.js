@@ -1,8 +1,6 @@
 const common = require("./lib/common.js")
 
 App({
-  // hostUrl: 'https://localhost/autowash',
-  hostUrl: 'https://www.cntjzz.com/autowash',
   user: {
     isLogin: false,
     session: ''
