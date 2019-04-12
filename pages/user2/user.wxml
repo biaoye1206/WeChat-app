@@ -1,0 +1,2 @@
+<button class='weui-btn' type='primary' lang='zh_CN' open-type='getUserInfo' bindgetuserinfo="getUserInfo" 
+style='margin: auto;'>获取用户信息</button>
