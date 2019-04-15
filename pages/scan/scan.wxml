@@ -1,14 +1,14 @@
 <view class='head'>
 		<swiper indicator-dots="true" class="frame">
 				<navigator url='/pages/scan/baidu/baidu'><swiper-item>
-					<image src="https://www.cntjzz.com:8008/autowash/img/imageab.jpg" style="width:750rpx;height:100%;"></image>
+					<image src="/image/imageab.jpg" style="width:750rpx;height:100%;"></image>
 				</swiper-item></navigator>
-        <swiper-item>
-					<image src="https://www.cntjzz.com:8008/autowash/img/imageab.jpg" style="width:750rpx;height:100%;"></image>
-				</swiper-item>
-        <swiper-item>
-					<image src="https://www.cntjzz.com:8008/autowash/img/imageab.jpg" style="width:750rpx;height:100%;"></image>
-				</swiper-item>
+        <navigator url='/pages/scan/baidu/baidu'><swiper-item>
+					<image src="/image/imageab.jpg" style="width:750rpx;height:100%;"></image>
+				</swiper-item></navigator>
+        <navigator url='/pages/scan/baidu/baidu'><swiper-item>
+					<image src="/image/imageab.jpg" style="width:750rpx;height:100%;"></image>
+				</swiper-item></navigator>
 		</swiper>
 </view>
 <view class="body-left">
