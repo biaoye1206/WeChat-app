@@ -1,0 +1,2 @@
+<!--pages/scan/baidu/baidu.wxml-->
+<view><web-view src="https://www.cntjzz.com"></web-view></view>

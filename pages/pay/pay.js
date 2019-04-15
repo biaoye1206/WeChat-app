@@ -105,6 +105,7 @@ Page({
 					var data = res.data.body;
 					// 调起微信支付
 					common.pay(data);
+          console.log(data);
 				} else {
 					wx.showToast({
 						title: '请求错误,请稍后重试',

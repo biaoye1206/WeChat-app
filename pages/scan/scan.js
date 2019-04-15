@@ -6,9 +6,6 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-		background: ['https://www.cntjzz.com:8008/autowash/img/imageab.jpg', 'https://www.cntjzz.com:8008/autowash/img/imageab.jpg', 'https://www.cntjzz.com:8008/autowash/img/imageab.jpg']
-	},
   
   /**
    * 识别二维码

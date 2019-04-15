@@ -1,10 +1,14 @@
 <view class='head'>
 		<swiper indicator-dots="true" class="frame">
-			<block wx:for="{{background}}" wx:key="*this">
-				<swiper-item>
-					<image src="{{item}}" style="width:750rpx;height:100%;"></image>
+				<navigator url='/pages/scan/baidu/baidu'><swiper-item>
+					<image src="https://www.cntjzz.com:8008/autowash/img/imageab.jpg" style="width:750rpx;height:100%;"></image>
+				</swiper-item></navigator>
+        <swiper-item>
+					<image src="https://www.cntjzz.com:8008/autowash/img/imageab.jpg" style="width:750rpx;height:100%;"></image>
 				</swiper-item>
-			</block>
+        <swiper-item>
+					<image src="https://www.cntjzz.com:8008/autowash/img/imageab.jpg" style="width:750rpx;height:100%;"></image>
+				</swiper-item>
 		</swiper>
 </view>
 <view class="body-left">
