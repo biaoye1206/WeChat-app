@@ -27,7 +27,7 @@
 		</cover-view>
 		<cover-view class='navigate_image'>
 			<cover-image src='/image/navigation1.png' bindtap='toNavigate'></cover-image>
-		</cover-view>-->
+		</cover-view>
 	</cover-view>
 
 	<cover-view class='width-hundred' style='height:1.2px;background-color:#eee'></cover-view>
