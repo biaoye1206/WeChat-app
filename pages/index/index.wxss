@@ -47,20 +47,20 @@
 .tooles .tool {
   width: 35px;
   height: 35px;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
   float: right;
   display: flex;
  
 }
 .tooles {
   width: 35px;
-  height: 81px;
+  height: 35px;
   float: right;
   margin: 30px 20px 0px 0px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 50%;
   background-color: #fff;
 }
 .server-info {

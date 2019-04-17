@@ -18,27 +18,27 @@
     "navigationStyle": "default"
   },
   "tabBar": {
-    "color": "#696969",
+    "color": "#2c2c2c",
     "selectedColor": "#1296db",
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "/image/map_normal.png",
-        "selectedIconPath": "/image/map_select.png"
+        "iconPath": "/image/map_normal-1.png",
+        "selectedIconPath": "/image/map_select-1.png"
       },
       {
         "pagePath": "pages/scan/scan",
-        "text": "扫码/支付",
-        "iconPath": "/image/code_normal.png",
-        "selectedIconPath": "/image/code_select.png"
+        "text": "扫码",
+        "iconPath": "/image/code_normal-1.png",
+        "selectedIconPath": "/image/code_select-1.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "/image/user_normal.png",
-        "selectedIconPath": "/image/user_select.png"
+        "iconPath": "/image/user_normal-1.png",
+        "selectedIconPath": "/image/user_select-1.png"
       }
     ]
   },
