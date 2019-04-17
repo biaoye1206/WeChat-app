@@ -8,7 +8,7 @@
     "pages/my/user/user",
     "pages/my/order/order",
 		"pages/my/recharge/recharge",
-    "pages/scan/baidu/baidu"
+    "pages/scan/tj/tj"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -30,7 +30,7 @@
       },
       {
         "pagePath": "pages/scan/scan",
-        "text": "扫码",
+        "text": "洗车",
         "iconPath": "/image/code_normal-1.png",
         "selectedIconPath": "/image/code_select-1.png"
       },

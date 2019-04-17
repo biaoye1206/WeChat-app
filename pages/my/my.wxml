@@ -1,21 +1,23 @@
 <!--pages/vip/vip.wxml-->
 
 <view class='head width-hundred color-blue flex-row'>
-	<image wx:if="{{show == false}}" class='avatar' src='/image/portrait.png'></image>
-	<image wx:else="{{show == true}}" class='avatar' src='{{userInfo.avatarUrl}}'></image>
+<navigator url="/pages/my/phone/phone" style='height:180rpx;' hover-class='none'>
+<view class='imgload'>
+	<image wx:if="{{show == false}}" class='avatar' src='/image/portrait-1.png'></image>
+	<image wx:else="{{show == true}}" class='avatar' src='{{userInfo.avatarUrl}}'></image></view>
 	<view class='user-set'>
 		<text class='font-bolder'>{{userInfo.nickName}}</text>
-		<navigator class='login-setting' url="/pages/my/phone/phone">
+		<view class='login-setting' url="/pages/my/phone/phone" hover-class='none'>
 			<label>帐号管理
 				<text style='margin-left:5px'>></text>
 			</label>
-		</navigator>
-	</view>
+		</view>
+	</view></navigator>
 </view>
 <view class='weui-cells' wx:if="{{show}}">
 	<navigator class="weui-cell weui-cell_access" url="/pages/my/order/order">
 		<view class="weui-cell__hd_in">
-			<image src='/image/order.png' model="widthFix" />
+			<image src='/image/order-1.png' model="widthFix" />
 		</view>
 		<view class="weui-cell__bd">订单详情</view>
 		<view class="weui-cell__ft weui-cell__hd_in-select-after">></view>
@@ -29,7 +31,7 @@
   </navigator> -->
   <navigator class="weui-cell weui-cell_access" url="/pages/my/recharge/recharge">
 		<view class="weui-cell__hd_in">
-			<image src='/image/top_up.png' model="widthFix" />
+			<image src='/image/top_up-1.png' model="widthFix" />
 		</view>
 		<view class="weui-cell__bd">余额充值</view>
 		<view class="weui-cell__ft weui-cell__hd_in-select-after">></view>
@@ -38,14 +40,14 @@
 <view class='weui-cells'>
 	<navigator class="weui-cell weui-cell_access" url="pages/icon/icon">
 		<view class="weui-cell__hd_in">
-			<image src='/image/opinion.png' model="widthFix" />
+			<image src='/image/opinion-1.png' model="widthFix" />
 		</view>
 		<view class="weui-cell__bd">意见反馈</view>
 		<view class="weui-cell__ft weui-cell__hd_in-select-after">></view>
 	</navigator>
 	<navigator class="weui-cell weui-cell_access" url="pages/icon/icon">
 		<view class="weui-cell__hd_in">
-			<image src='/image/about.png' model="widthFix" />
+			<image src='/image/about-1.png' model="widthFix" />
 		</view>
 		<view class="weui-cell__bd">关于我们</view>
 		<view class="weui-cell__ft weui-cell__hd_in-select-after">></view>

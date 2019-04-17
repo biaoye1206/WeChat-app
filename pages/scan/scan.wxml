@@ -1,12 +1,12 @@
 <view class='head'>
 		<swiper indicator-dots="true" class="frame">
-				<navigator url='/pages/scan/baidu/baidu'><swiper-item>
+				<navigator url='/pages/scan/tj/tj'><swiper-item>
 					<image src="/image/imageab.jpg" style="width:750rpx;height:100%;"></image>
 				</swiper-item></navigator>
-        <navigator url='/pages/scan/baidu/baidu'><swiper-item>
+        <navigator url='/pages/scan/tj/tj'><swiper-item>
 					<image src="/image/imageab.jpg" style="width:750rpx;height:100%;"></image>
 				</swiper-item></navigator>
-        <navigator url='/pages/scan/baidu/baidu'><swiper-item>
+        <navigator url='/pages/scan/tj/tj'><swiper-item>
 					<image src="/image/imageab.jpg" style="width:750rpx;height:100%;"></image>
 				</swiper-item></navigator>
 		</swiper>

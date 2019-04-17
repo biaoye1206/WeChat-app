@@ -22,8 +22,8 @@
 
 /* 搜索框提示文字样式 */
 .search input{
-  height: 30px;
-  border-radius: 5px;
+  height: 60rpx;
+  border-radius: 10rpx;
   font-size:27rpx;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left:30rpx; 
@@ -40,23 +40,23 @@
 }
 
 .tooles-image {
-  width: 25px;
-  height: 25px;
-  padding: 5px;
+  width: 50rpx;
+  height: 50rpx;
+  padding: 10rpx;
 }
 .tooles .tool {
-  width: 35px;
-  height: 35px;
+  width: 70rpx;
+  height: 70rpx;
   /*margin-bottom: 10px;*/
   float: right;
   display: flex;
  
 }
 .tooles {
-  width: 35px;
-  height: 35px;
+  width: 70rpx;
+  height: 70rpx;
   float: right;
-  margin: 30px 20px 0px 0px;
+  margin: 60rpx 40rpx 0rpx 0rpx;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -64,20 +64,21 @@
   background-color: #fff;
 }
 .server-info {
-  border-radius: 10px;
+  border-radius: 20rpx;
   background-color: #fff;
-  height: 120px;
+  height: 240rpx;
   position: absolute;
-  bottom: 5px;
+  bottom: 10rpx;
 }
 .info_img {
-  height: 20px;
-  width: 20px;
+  height: 40rpx;
+  width: 40rpx;
 }
 
 .navigate_image {
-  width: 35px;
-  height: 35px;
+  width: 70rpx;
+  height: 70rpx;
   position: absolute;
-  right: 15px;
+  right: 30rpx;
+  top: 15rpx;
 }

@@ -1,2 +1,2 @@
-<!--pages/scan/baidu/baidu.wxml-->
+<!--pages/scan/tj/tj.wxml-->
 <view><web-view src="https://www.cntjzz.com"></web-view></view>

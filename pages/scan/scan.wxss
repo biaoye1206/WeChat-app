@@ -50,3 +50,10 @@
 .body-left{
 	height: 40%;
 }
+.button-hover[type=primary]{
+  background-color: #FFAA46;
+  color:#fff;
+}
+button[type=primary]{
+  background-color: #FF8E08;
+}

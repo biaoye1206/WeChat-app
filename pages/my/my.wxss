@@ -5,13 +5,15 @@ page {
 
 .head {
   height: 260rpx;
-  color: #1D8EC5;
+  color: #1296db;
 }
-
+.navload{
+width: 100%;
+}
 .avatar {
   width: 160rpx;
   height: 160rpx;
-  border-radius: 80rpx;
+  border-radius: 20rpx;
   background-color: #fff;
   margin: 20rpx 0rpx 0rpx 50rpx;
 }
@@ -21,8 +23,11 @@ page {
   color: #fff;
   display: flex;
   flex-direction: column;
+  float: left;
 }
-
+.imgload{
+  float: left;
+}
 .font-bolder {
   font-weight: bolder;
   font-size: 40rpx;
@@ -32,11 +37,11 @@ page {
   margin-top: 6rpx;
   width: 160rpx;
   font-size: 24rpx;
-  border: 2rpx solid #9dd3fa;
+  border: 2rpx solid #fff;
   text-align: center;
   border-radius: 20rpx;
-  background-color: #1e6eb2;
-  color: #9dd3fa;
+  background-color: #1295DB;
+  color: #fff;
 }
 .text-center:active{
 	background-color: #E08031;

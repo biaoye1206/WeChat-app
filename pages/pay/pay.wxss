@@ -5,18 +5,18 @@ page {
 }
 
 .quter_frame {
-  margin: 0px 35px 0px 35px;
+  margin: 0rpx 70rpx 0rpx 70rpx;
 }
 
 .left_frame {
-  margin-top: 35px;
+  margin-top: 70rpx;
   width: 12%;
   height: 100%;
 }
 
 .right_frame {
-  margin-left: 5px;
-  margin-top: 35px;
+  margin-left: 10rpx;
+  margin-top: 70rpx;
   width: 88%;
   height: 100%;
 }
@@ -26,17 +26,17 @@ page {
 }
 
 .line {
-  border-bottom: 1px solid #789;
+  border-bottom: 2rpx solid #789;
 }
 .service-content {
-  height: 26px;
+  height: 32rpx;
   display: block;
 }
 .line-height {
-  margin: 20px 0px 20px 0px;
+  margin: 40rpx 0rpx 40rpx 0rpx;
 }
 .submit-model {
   position: absolute;
-  bottom: 20px;
-  right: 30px;
+  bottom: 40rpx;
+  right: 60rpx;
 }

@@ -62,7 +62,7 @@ icon {
 }
 
 .weui-cell {
-  padding: 20rpx 30rpx;
+  padding: 16rpx 30rpx;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -78,7 +78,7 @@ icon {
   left: 0;
   top: 0;
   right: 0;
-  height: 1px;
+  height: 2rpx;
   border-top: 1rpx solid #d9d9d9;
   color: #d9d9d9;
   left: 30rpx;
@@ -300,7 +300,7 @@ icon {
   left: 0;
   top: 0;
   right: 0;
-  height: 1px;
+  height: 2rpx;
   border-top: 1rpx solid #d5d5d6;
   color: #d5d5d6;
 }
@@ -379,19 +379,19 @@ icon {
 .weui-select:before {
   content: " ";
   display: inline-block;
-  height: 6px;
-  width: 6px;
+  height: 12rpx;
+  width: 12rpx;
   border-width: 4rpx 4rpx 0 0;
   border-color: #c8c8cd;
   border-style: solid;
   -webkit-transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
   transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
   position: relative;
-  top: -2px;
+  top: -4rpx;
   position: absolute;
   top: 50%;
-  right: 15px;
-  margin-top: -4px;
+  right: 30rpx;
+  margin-top: -8rpx;
 }
 
 .weui-select_in-select-after {

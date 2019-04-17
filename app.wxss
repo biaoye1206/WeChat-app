@@ -49,7 +49,7 @@ page {
 }
 
 .color-blue {
-  background-color: #1f6fb5;
+  background-color: #1296db;
 }
 
 /* 左右排列 */
@@ -86,7 +86,7 @@ page {
 .pay-type{
   text-align:center;
   border:2rpx solid #789;
-  border-radius: 5px;
+  border-radius: 10rpx;
 }
 /*左右居中*/
 .element-center{
@@ -96,7 +96,7 @@ page {
   width: 44rpx;
   height: 44rpx;
   margin-right: 20rpx;
-  margin-top: 8rpx;
+  margin-top: 10rpx;
 }
 .text-center{
 	text-align: center;

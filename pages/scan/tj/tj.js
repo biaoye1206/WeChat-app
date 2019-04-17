@@ -1,4 +1,4 @@
-// pages/scan/baidu/baidu.js
+// pages/scan/tj/tj.js
 Page({
 
   /**
