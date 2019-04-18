@@ -45,8 +45,8 @@
   padding: 10rpx;
 }
 .tooles .tool {
-  width: 70rpx;
-  height: 70rpx;
+  /*width: 70rpx;*/
+  /*height: 70rpx;*/
   /*margin-bottom: 10px;*/
   float: right;
   display: flex;

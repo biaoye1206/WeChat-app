@@ -2,10 +2,10 @@
   <navigator class="weui-cell weui-cell_access" data-id='{{id}}'>
     <!-- 图片 -->
     <view class="weui-cell__hd_in" wx:if="{{tradeType==0}}">
-      <image id="image" src='/image/pay.png' lazy-load="true" model="widthFix"/>
+      <image id="image" src='/image/pay-1.png' lazy-load="true" model="widthFix"/>
     </view>
     <view class="weui-cell__hd_in" wx:if="{{tradeType==1}}">
-      <image id="image" src='/image/top_up.png' lazy-load="true" model="widthFix"/>
+      <image id="image" src='/image/top_up-1.png' lazy-load="true" model="widthFix"/>
     </view>
     
     <!-- 服务类别 -->

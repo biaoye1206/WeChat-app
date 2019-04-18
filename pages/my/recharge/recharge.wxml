@@ -18,10 +18,10 @@
 			</view>
 		</view>
 	</view>
-	<view class="model_body_lump-last">
+	<!--<view class="model_body_lump-last">
 		<view class="title-style" style="width: 30%;">充值方式</view>
 		<view class="title-style type" style="width: 60%; text-align: center;">微信支付</view>
-	</view>
+	</view>-->
 </view>
 <view class="model-body-last">
 	<view id="grad1"></view>

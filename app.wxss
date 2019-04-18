@@ -35,7 +35,7 @@ page {
 
 .title-style {
   font-size: 36rpx;
-  color: #304050;
+  color: #2c2c2c;
 }
 
 /* 颜色:灰 */
@@ -96,7 +96,7 @@ page {
   width: 44rpx;
   height: 44rpx;
   margin-right: 20rpx;
-  margin-top: 10rpx;
+  display: block;
 }
 .text-center{
 	text-align: center;
