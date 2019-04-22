@@ -8,7 +8,8 @@
     "pages/my/user/user",
     "pages/my/order/order",
     "pages/my/recharge/recharge",
-    "pages/scan/tj/tj"
+    "pages/scan/tj/tj",
+    "pages/tj/tj"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -29,10 +30,22 @@
         "selectedIconPath": "/image/map_select-1-1.png"
       },
       {
+        "pagePath": "pages/tj/tj",
+        "text": "车生活",
+        "iconPath": "/image/car_normal-2.png",
+        "selectedIconPath": "/image/car_select-2.png"
+      },
+      {
         "pagePath": "pages/scan/scan",
         "text": "洗车",
         "iconPath": "/image/code_normal-1.png",
         "selectedIconPath": "/image/code_select-1-1.png"
+      },
+      {
+        "pagePath": "pages/tj/tj",
+        "text": "人生活",
+        "iconPath": "/image/life_normal.png",
+        "selectedIconPath": "/image/life_select.png"
       },
       {
         "pagePath": "pages/my/my",

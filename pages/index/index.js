@@ -4,8 +4,8 @@ var qqmapsdk;
 const common = require("../../lib/common.js")
 Page({
 	data: {
-		latitude: 22.9693437321,
-		longitude: 113.1251102686,
+    latitude: 22.8207940000,
+    longitude: 113.2845650000,
 		polyline: {},
 		scale: 13,
 		markers: [],

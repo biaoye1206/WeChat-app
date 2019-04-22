@@ -1,6 +1,5 @@
 <!--pages/user/detail.wxml-->
-
-<view class="weui-tab  width-hundred">
+<view class="weui-tab">
 	<view class="weui-navbar" bindtap="select" style='background-color:#fefefe'>
     <view class="logo">
     <image src='/image/order-1.png'/>

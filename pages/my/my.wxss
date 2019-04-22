@@ -1,14 +1,13 @@
 page {
   background-color: #fafafa;
-  display: block;
 }
-
-.head {
+.user {
   height: 260rpx;
-  color: #1296db;
+  background-color: #1296db;
+  width: 100%;
 }
-.navload{
-width: 100%;
+.user-login{
+  align-items: flex-end;
 }
 .avatar {
   width: 160rpx;
@@ -19,23 +18,17 @@ width: 100%;
 }
 .user-set {
   margin-left: 24rpx;
-  margin-top: 50rpx;
   color: #fff;
   display: flex;
   flex-direction: column;
-  float: left;
+  justify-content: flex-start
 }
-.imgload{
-  float: left;
-}
-.font-bolder {
+.user-name {
   font-weight: bolder;
   font-size: 40rpx;
 }
 
-.login-setting {
-  margin-top: 6rpx;
-  width: 160rpx;
+.user-manage {
   font-size: 24rpx;
   border: 2rpx solid #fff;
   text-align: center;

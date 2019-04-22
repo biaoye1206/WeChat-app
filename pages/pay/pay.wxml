@@ -1,9 +1,9 @@
 <view class='quter_frame flex-row'>
+  <view class='right_frame'>
   <view class='left_frame'>
     <image src='../../image/wash.png' style='width:35px;height:31px'></image>
+    <text class='title-style' style='color:#1296db;font-size:44rpx; margin-left:20rpx'>{{orderDetil.serviceStationName}}</text>
   </view>
-  <view class='right_frame'>
-    <text class='title-style' style='color:#1F6FB5;font-size:22px'>{{orderDetil.serviceStationName}}</text>
     <text class='content-style text-content'>{{orderDetil.serviceStationAddr}}</text>
     <view class='line line-height' />
     <view class='flex-row content-align'>
@@ -12,16 +12,14 @@
       </view>
       <text class='content-title' style='margin-left:5px;'>洗车时间5分钟</text>
     </view>
-    <view class="title-style line-height flex-row">
-      <view style='width:50%;'>支付金额</view>
-      <view style='width:5%' />
-      <view style='width:45%;'>￥{{orderDetil.amount}}元</view>
+    <view class="title-style line-height flex-row payment">
+      <view>支付金额：</view>
+      <view>￥{{orderDetil.amount}}元</view>
     </view>
-    <picker id='pay' value="{{pay.payType}}" range="{{orderDetil.payTypes}}" bindchange='pickerChange'>
+    <picker id='pay' value="{{pay.payType}}" range="{{orderDetil.payTypes}}" bindchange='pickerChange' class='payment'>
       <view class="title-style line-height flex-row">
-        <view style='width:50%;'>支付方式</view>
-        <view style='width:5%' />
-        <view class='pay-type' style='width:45%;'>
+        <view>支付方式：</view>
+        <view class='pay-type'>
           <text>{{orderDetil.payTypes[pay.payType]}}</text>
           <text style='position:relative;right:-5px;'>▼</text>
         </view>

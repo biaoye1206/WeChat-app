@@ -19,7 +19,6 @@
   border:1rpx solid whitesmoke;
   margin-top: 3px;
 } 
-
 /* 搜索框提示文字样式 */
 .search input{
   height: 60rpx;
@@ -30,7 +29,6 @@
   background-color:whitesmoke;
   border:1rpx solid whitesmoke;
 }
-
 /* 搜索框小图标 */
 .search-group image
 { 
@@ -38,7 +36,6 @@
   height:35rpx;
   padding-right:20rpx;
 }
-
 .tooles-image {
   width: 50rpx;
   height: 50rpx;
@@ -63,22 +60,41 @@
   border-radius: 50%;
   background-color: #fff;
 }
-.server-info {
+.service-stn {
   border-radius: 20rpx;
   background-color: #fff;
-  height: 240rpx;
   position: absolute;
   bottom: 10rpx;
 }
-.info_img {
-  height: 40rpx;
-  width: 40rpx;
+.service-info{
+  width: 92%;
+  margin: 30rpx auto;
+  justify-content: space-between;
 }
-
-.navigate_image {
+.service-title{
+  justify-items: center;
+}
+.service-title_img {
+  width: 40rpx;
+  margin-right: 10rpx;
+}
+.service-navigate_img {
   width: 70rpx;
-  height: 70rpx;
   position: absolute;
-  right: 30rpx;
+  right: 25rpx;
   top: 15rpx;
 }
+.service-line{
+  height:2.4rpx;
+  background-color:#eee;
+}
+.service-status_0{
+  color:#FF8E08;
+}
+.service-status_1{
+  color:#02F500;
+}
+.service-status_2{
+  color:#FF0000;
+}
+

@@ -15,25 +15,23 @@
 		</cover-view>-->
 	</cover-view>
 </map>
-<cover-view class='server-info width-ninety' hidden='{{hiddenInfo}}' bindtap='toNavigate'>
-	<cover-view class='flex-row' style='width: 92%;margin: 15px auto;'>
-		<cover-view>
-			<cover-view class='flex-row'>
-				<cover-image src='/image/info_img1.png' class='info_img' style='margin-right:5px' />
+<cover-view class='service-stn width-ninety' hidden='{{hiddenInfo}}' bindtap='toNavigate'>
+	<cover-view class='flex-col service-info'>
+			<cover-view class='flex-row service-title'>
+				<cover-image src='/image/info_img1.png' class='service-title_img'/>
 				<cover-view class='title-style'>{{info.name}}</cover-view>
 			</cover-view>
-			<cover-view class='content-style' style="margin-top:8px;">{{info.address}} | {{info.distance}}</cover-view>
-		</cover-view>
+			<cover-view class='subhead-style'>{{info.address}} | {{info.distance}}</cover-view>
 	</cover-view>
-  <cover-view class='navigate_image'>
+  <cover-view class='service-navigate_img'>
 			<cover-image src='/image/navigation1.png' bindtap='toNavigate'></cover-image>
 		</cover-view>
-	<cover-view class='width-hundred' style='height:1.2px;background-color:#eee'></cover-view>
-	<cover-view class='content-style width-ninety flex-row' style='margin: 20rpx auto; width:92%;'>
-		<cover-view>设备状态：</cover-view>
-		<cover-view style='color:#02F500' wx:if="{{info.status==1}}">正常</cover-view>
-		<cover-view style='color:#FF8E08' wx:elif="{{info.status==0}}">停止</cover-view>
-		<cover-view style='color:#FF0000' wx:else="{{info.status==2}}">异常</cover-view>
-		<cover-view style='margin-left:40px'>服务时间：8:00-22:00</cover-view>
+	<cover-view class='service-line'></cover-view>
+	<cover-view class='content-style flex-row service-info'>
+		<cover-view class='flex-row'>设备状态：
+    <cover-view class='service-status_1' wx:if="{{info.status==1}}">正常</cover-view>
+		<cover-view class='service-status_0' wx:elif="{{info.status==0}}">停止</cover-view>
+		<cover-view class='service-status_2' wx:else="{{info.status==2}}">异常</cover-view></cover-view>
+		<cover-view>服务时间：8:00-22:00</cover-view>
 	</cover-view>
 </cover-view>
