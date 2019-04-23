@@ -20,7 +20,6 @@ icon {
   /*line-height: 1.41176471;*/
   font-size: 34rpx;
   color: #2C2C2C;
-  width: 100%;
 }
 
 .weui-cells:before {

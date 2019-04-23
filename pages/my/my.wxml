@@ -1,6 +1,6 @@
 <!--pages/vip/vip.wxml-->
 <view class='user'>
-<navigator url="/pages/my/phone/phone" style='height:180rpx;' hover-class='none' class='flex-row user-login'>
+<navigator url="/pages/my/phone/phone" hover-class='none' class='flex-row user-login'>
 	<image wx:if="{{show == false}}" class='avatar' src='/image/portrait-1.png'></image>
 	<image wx:else="{{show == true}}" class='avatar' src='{{userInfo.avatarUrl}}'></image>
 	<view class='user-set'>

@@ -1,61 +1,30 @@
-.model_body-head {
-	margin: 0rpx;
-	height: 85%;
-	width: 90%;
+.recharge-title{
+  text-align: center;
+  margin-top: 20rpx;
 }
-
-.title-style {
-	margin-top: 40rpx;
-	height: auto;
-  margin-left: 2%;
-}
-
-.model_body_lump-head {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
+.recharge-money {
   color: #FF8E08;
+  margin-top: 20rpx;
 }
 
-.model_body_lump-last {
-	margin-top: 40rpx;
+.recharge-money_list {
+	margin-bottom: 40rpx;
 	display: flex;
-	width: 100%;
 	flex-direction: row;
 }
 
-.item_table {
+.recharge-money_lt {
 	width: 100%;
-	height: 80rpx;
+	height: 100rpx;
 	border: #FF8E08 solid 2rpx;
 	margin: 0 2%;
 	border-radius: 10rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
 }
 
-.money {
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	font: 36rpx;
-	line-height: 80rpx;
-}
-
-.money-select {
-	background-color: #FF8E08;
-	color: #FFFFFF;
-}
-
-
-.type {
-	border: #C8C8CD solid 2rpx;
-	border-radius: 10rpx;
-	line-height: 80rpx;
-	background-color: #C8C8CD;
-	color: #B2B2B2;
-}
-
-.model-body-last {
+.recharge-amount {
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
@@ -63,39 +32,35 @@
 	margin: auto;
 }
 
-.pay_acount {
-	width: 50%;
-	text-align: center;
-	height: 100%;
-	line-height: 120rpx;
-  color: #2c2c2c;
-}
-
-.pay_submit {
-	width: 50%;
-	height: 100%;
-}
-
-#grad1 {
+.recharge-grad {
 	height: 12rpx;
 	width: 100%;
 	background: linear-gradient(0deg, #C8C8CD, #FFFFFF);
 }
 
-.model-body-last-item {
-	display: flex;
-	flex-direction: row;
+.recharge-amount_pay {
+	width: 50%;
+	text-align: center;
 	height: 100%;
-	width: 100%;
+	line-height: 110rpx;
+  font-size: 40rpx;
 }
 
-.submit {
+.recharge-sum{
+  align-items: center;
+  justify-content: center;
+}
+
+.recharge-amount_submit {
 	background-color: #FF8E08;
-	width: 88%;
-	height: 80rpx;
+	flex-basis: 46%;
 	text-align: center;
 	line-height: 80rpx;
 	border-radius: 10rpx;
-	margin-top: 16rpx;
 	color: #FFFFFF;
+  font-size: 40rpx;
+}
+.recharge-select{
+  color: #fff;
+  background-color: #FF8E08;
 }

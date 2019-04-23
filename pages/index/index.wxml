@@ -15,7 +15,7 @@
 		</cover-view>-->
 	</cover-view>
 </map>
-<cover-view class='service-stn width-ninety' hidden='{{hiddenInfo}}' bindtap='toNavigate'>
+<cover-view class='service-stn' hidden='{{hiddenInfo}}' bindtap='toNavigate'>
 	<cover-view class='flex-col service-info'>
 			<cover-view class='flex-row service-title'>
 				<cover-image src='/image/info_img1.png' class='service-title_img'/>

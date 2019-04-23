@@ -19,7 +19,6 @@
 	color: #D7D6DC;
 } */
 .ad{
-	width: 100%;
 	height: 60%;
 }
 .ad-carousel{

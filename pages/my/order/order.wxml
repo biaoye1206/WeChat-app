@@ -4,16 +4,16 @@
     <view class="logo">
     <image src='/image/order-1.png'/>
     </view>
-		<view class="weui-navbar__item weui-navbar__title select first">
+		<view class="weui-navbar__item weui-navbar__title">
 			订单类型
 		</view>
-		<view class="weui-navbar__item weui-navbar__title select">
+		<view class="weui-navbar__item weui-navbar__title">
 			订单金额
 		</view>
-		<view class="weui-navbar__item weui-navbar__title select">
+		<view class="weui-navbar__item weui-navbar__title">
 			创建时间
 		</view>
-		<view class="weui-navbar__item weui-navbar__title select">
+		<view class="weui-navbar__item weui-navbar__title">
 			订单状态
 		</view>
 	</view>

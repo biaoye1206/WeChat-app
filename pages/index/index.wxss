@@ -65,6 +65,8 @@
   background-color: #fff;
   position: absolute;
   bottom: 10rpx;
+  width: 90%;
+  align-self: center;
 }
 .service-info{
   width: 92%;

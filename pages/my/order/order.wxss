@@ -1,8 +1,4 @@
 /* pages/user/detail.wxss */
-
-.select{
-	color: #2c2c2c;
-}
 .column{
   width: 15%;
   text-align: center;

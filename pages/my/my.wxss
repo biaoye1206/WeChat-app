@@ -2,30 +2,32 @@ page {
   background-color: #fafafa;
 }
 .user {
-  height: 260rpx;
+  height: 200rpx;
   background-color: #1296db;
-  width: 100%;
+  padding-top: 30rpx;
 }
 .user-login{
   align-items: flex-end;
+  float: left;
 }
 .avatar {
-  width: 160rpx;
-  height: 160rpx;
+  width: 130rpx;
+  height: 130rpx;
   border-radius: 20rpx;
   background-color: #fff;
-  margin: 20rpx 0rpx 0rpx 50rpx;
+  margin: 0rpx 0rpx 0rpx 50rpx;
 }
 .user-set {
   margin-left: 24rpx;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start
+  align-items: flex-start;
 }
 .user-name {
   font-weight: bolder;
   font-size: 40rpx;
+  line-height: 1;
 }
 
 .user-manage {
@@ -35,7 +37,9 @@ page {
   border-radius: 20rpx;
   background-color: #1295DB;
   color: #fff;
-}
+  margin-top: 20rpx;
+  padding: 0rpx 20rpx;
+  }
 .text-center:active{
 	background-color: #E08031;
 }
