@@ -1,51 +1,66 @@
-page {
-  display: initial;
-  width: 100%;
-  height: 100%;
-}
-
-.quter_frame {
+.order {
   margin: 0rpx 70rpx 0rpx 70rpx;
-  color: #2c2c2c
-}
-
-.left_frame {
-  display: flex;
-  flex-direction: row;
-}
-
-.right_frame {
+  color: #2c2c2c;
   margin-top: 70rpx;
-  width: 100%;
-  height: 100%;
 }
-
-.text-content {
-  display: block;
-  color: #959595;
+.order-add_img{
+  width:70rpx;
+  height:70rpx
 }
-
-.line {
-  border-bottom: 2rpx solid #789;
+.order-add{
+  align-items: flex-end;
 }
-.service-content {
-  height: 32rpx;
-  display: block;
+.order-add_title{
+  color:#FF8E08;
+  font-size:44rpx;
+  margin-left:10rpx;
+  line-height: 1;
 }
-.line-height {
+.order-add_line{
+  border-bottom: 2rpx solid #eee;
   margin: 20rpx 0rpx;
 }
-.content-align{
+.order-wash{
   align-items: center;
 }
-.submit-model {
+.order-wash_img{
+  width: 44rpx;
+  height: 44rpx;
+}
+.order-wash_time{
+  margin-left: 10rpx;
+  font-size: 36rpx;
+}
+.order-money{
+  align-items: center;
+  font-size: 36rpx;
+  margin-top: 20rpx;
+}
+.order-payment{
+  font-size: 36rpx;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.order-payment_type{
+  padding: 0rpx 20rpx;
+  border: 2rpx #2c2c2c solid;
+  border-radius: 50rpx;
+}
+.order-pay {
   position: absolute;
   bottom: 40rpx;
-  right: 60rpx;
+  left: 5%;
+  width: 90%;
 }
-.payment{
-  float:right;
+.button-hover[type=primary]{
+  background-color: #FFAA46;
+  color:#fff;
 }
-.pay-type{
-  padding: 0rpx 20rpx;
+button[type=primary]{
+  background-color: #FF8E08;
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+}
+button::after {
+  border: none;
 }

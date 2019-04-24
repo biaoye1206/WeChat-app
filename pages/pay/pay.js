@@ -10,7 +10,7 @@ Page({
 		pay: {
 			amount: 0,
 			usrCouponId: "",
-			payType: 0,
+			payType: 1,
 		}
 
 	},

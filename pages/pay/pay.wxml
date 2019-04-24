@@ -1,35 +1,29 @@
-<view class='quter_frame flex-row'>
-  <view class='right_frame'>
-  <view class='left_frame'>
-    <image src='../../image/wash.png' style='width:35px;height:31px'></image>
-    <text class='title-style' style='color:#1296db;font-size:44rpx; margin-left:20rpx'>{{orderDetil.serviceStationName}}</text>
+<view class='order flex-col'>
+  <view class='flex-row order-add'>
+    <image src='../../image/wash-1.png' class='order-add_img'></image>
+    <text class='order-add_title'>{{orderDetil.serviceStationName}}</text>
   </view>
-    <text class='content-style text-content'>{{orderDetil.serviceStationAddr}}</text>
-    <view class='line line-height' />
-    <view class='flex-row content-align'>
-      <view style='width:22px;height:22px'>
-        <image src='../../image/time.png' style='width:100%;height:100%'></image>
-      </view>
-      <text class='content-title' style='margin-left:5px;'>洗车时间5分钟</text>
+    <text class='subhead-style'>{{orderDetil.serviceStationAddr}}</text>
+    <view class='order-add_line' />
+    <view class='flex-row order-wash'>
+      <image src='../../image/time-1.png' class='order-wash_img'></image>
+      <text class='order-wash_time'>洗车时间5分钟</text>
     </view>
-    <view class="title-style line-height flex-row payment">
+    <view class="flex-row order-money">
       <view>支付金额：</view>
       <view>￥{{orderDetil.amount}}元</view>
     </view>
-    <picker id='pay' value="{{pay.payType}}" range="{{orderDetil.payTypes}}" bindchange='pickerChange' class='payment'>
-      <view class="title-style line-height flex-row">
+    <picker id='pay' value="{{pay.payType}}" range="{{orderDetil.payTypes}}" bindchange='pickerChange' >
+    <view class='flex-row order-payment'>  
         <view>支付方式：</view>
-        <view class='pay-type'>
+        <view class='order-payment_type'>
           <text>{{orderDetil.payTypes[pay.payType]}}</text>
-          <text style='position:relative;right:-5px;'>▼</text>
-        </view>
+          <text style='position:relative;right:-10rpx;'>▼</text>
       </view>
+      </view>  
     </picker>
-    <view class='submit-model'>
+    <view class='order-pay'>
     <view hidden='true'>{{pay.amount}}</view>
-      <view class='submit'>
-        <button type='primary' bindtap='orderPost'>确认支付</button>
-      </view>
+    <button type='primary' bindtap='orderPost'>确认支付</button>
     </view>
-  </view>
 </view>
